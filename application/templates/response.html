@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form method=get action="">
+        {{ form.hidden_tag() }}
+        {{ form.body.label }} {{ form.body(readonly=true, cols="35", rows="12") }}
+    </form>
+    <form>
+        <input type="button" value="Отправить ещё один отчёт" onClick='location.href="/submit"'>
+    </form>
+{% endblock %}
